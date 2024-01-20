@@ -1,4 +1,17 @@
+:root {
+    --color1: #00b7ef;
+    --color2: #ff7e00;
+    --color3: #22b14c;
+    --color4: #990030;
+}
+
+
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +23,35 @@ button {
 }
 
 .centered {
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
+    height: 600px;
+    width: 500px;
+
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 100px;
 }
+
+
+.titleBox {
+    background-color: white;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .slot {
     color: black;
@@ -27,9 +65,18 @@ button {
 
 
 .board {
-    height: 500px;
-    width: 500px;
+
+
     padding: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 
     display: grid;
     column-gap: 5px;
@@ -41,9 +88,16 @@ button {
 }
 
 .screen {
-    height: 100px;
-    width: 500px;
     padding: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
 
     display: grid;
     column-gap: 5px;
@@ -60,12 +114,14 @@ button {
 .newGameButtonBox {
     padding: 5px;
 
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    width: 100%;
+    height: 90%;
 }
 #NewGameButton {
-    height: 75px;
+    font-size: 16px;
+
+    height: 80%;
+    width: 90%;
 
     border-radius: 5px;
     border-width: 5px 5px 5px 5px;

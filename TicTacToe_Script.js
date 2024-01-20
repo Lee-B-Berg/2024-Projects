@@ -12,6 +12,7 @@ function Initialize() { // this has been written but not called yet, currently X
     reset();
 
     document.getElementById("board").style.display = "grid";
+    document.getElementById("titleBox").style.display = "none";
     document.getElementById("NewGameButton").innerHTML = "NEW GAME";
 
     setTurnTrackerBox();
