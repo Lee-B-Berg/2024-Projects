@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="TicTacToe_Style.css">
+</head>
+<body>
+
+    <div class="centered">
+        <div class="board">
+            <button class="slot" id="TopLef" onclick="place(this)">.</button>
+            <button class="slot" id="TopMid" onclick="place(this)">.</button>
+            <button class="slot" id="TopRig" onclick="place(this)">.</button>
+            <button class="slot" id="MidLef" onclick="place(this)">.</button>
+            <button class="slot" id="MidMid" onclick="place(this)">.</button>
+            <button class="slot" id="MidRig" onclick="place(this)">.</button>
+            <button class="slot" id="BotLef" onclick="place(this)">.</button>
+            <button class="slot" id="BotMid" onclick="place(this)">.</button>
+            <button class="slot" id="BotRig" onclick="place(this)">.</button>
+        </div>
+
+        <button id="resetButton" onclick="reset()">RESET</button>
+        <p id="gameStatus">The Winner Is: ?</p>
+
+    </div>
+    
+
+    <script src="TicTacToe_Script.js"></script>
+</body>
+</html>
