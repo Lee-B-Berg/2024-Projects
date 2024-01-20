@@ -9,6 +9,23 @@ button {
     font-size: 24px;
 }
 
+.centered {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.slot {
+    color: black;
+    font-size: 36px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: black;
+}
+
+
 .board {
     height: 500px;
     width: 500px;
@@ -20,5 +37,87 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     
+    background-color: darkcyan;
+}
+
+.screen {
+    height: 100px;
+    width: 500px;
+    padding: 5px;
+
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
     background-color: cadetblue;
+}
+
+
+
+
+.newGameButtonBox {
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#NewGameButton {
+    height: 75px;
+
+    border-radius: 5px;
+    border-width: 5px 5px 5px 5px;
+    border-color: darkcyan;
+    border-style: solid;
+    background-color: aliceblue;
+
+    transition-duration: 0.3s;
+    box-shadow: 0 10px darkgrey;
+}
+#NewGameButton:hover {
+    background-color: lightblue;
+}
+#NewGameButton:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px black;
+}
+
+
+
+
+.turnTrackerBox {
+    background-color: aliceblue;
+    font-size: 18px;
+
+    margin: 10px;;
+
+    border-radius: 25px;
+    border-color: darkgray;
+    border-width: 5px;
+    border-style: solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.gameStatusBox {
+    background-color: aliceblue;
+    font-size: 18px;
+
+    margin: 10px;;
+
+    border-radius: 25px;
+    border-color: darkgray;
+    border-width: 5px;
+    border-style: solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
